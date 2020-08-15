@@ -1,4 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
+import './FetchQuotes';
+import {container} from 'react-bootstrap';
 
 const FetchQuotes = () => {
     const [quote, setQuote] = useState({});
@@ -12,7 +14,7 @@ const FetchQuotes = () => {
       });
   }, [click]);
   return (
-    <div>
+    <div className="container">
       <div>
         <h2>{quote.quote}</h2>
         <h4>{quote.author}</h4>
